@@ -1,2 +1,2 @@
-# blusensor-gateway-api
-bluSensor® Bluetooth GATEWAY API
+# bluSensor® MQTT API
+
