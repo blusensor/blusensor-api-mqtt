@@ -1,9 +1,12 @@
 # bluSensor® MQTT API
 
 ## Broker
+You can use our **shared MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, we can ship our sensors already configured for your requirements. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
+
 ```
 broker.blusensor.com
 ```
+
 **Available Ports**
 
 * 7883 (client)
@@ -130,4 +133,28 @@ People Counter          | people
 
 ## Development Tools
 
+You can use any MQTT client to connect to our broker and subscribe to your sensor's data. 
 
+We can recommend MQTT.fx!
+
+#### MQTT.fx - Configuration (TLS)
+<img src="screenshot_mqttfx_conf.jpg" width="800">
+
+#### MQTT.fx - Sensor Data (JSON)
+<img src="screenshot_mqttfx.jpg" width="800">
+
+# Purchase Sensors
+
+You can buy sensors and development kits in our online shop at https://www.blusensor.com/shop/
+
+# Support
+
+Having trouble with bluSensor® API or need development support? 
+
+You will get direct support from our **core development team** (free of charge)!
+
+You can contact us anytime at support@blusensor.com
+
+You need a sensor type that is not listed yet?
+
+Just drop us an email!
