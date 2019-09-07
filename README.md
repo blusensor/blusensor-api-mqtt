@@ -99,7 +99,6 @@ type         | description
   "co2" : 1023,
 }
 ```
-#### Sensor Types
 
 sensor value            | json
 ------------            | -------------   
