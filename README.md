@@ -15,10 +15,10 @@ broker.blusensor.com
 * 8885 (websockets,TLS)
 
 ## Dashboard
-We've implemented a basic dashboard to display current sensor values.
 
-https://broker.blusensor.com
+We've implemented a basic dashboard (using mqtt websockets) to display current sensor values: https://broker.blusensor.com
 
+<img src="screenshot_dashboard.png" width="800">
 
 ## MQTT Topics
 
