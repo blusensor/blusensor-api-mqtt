@@ -145,7 +145,11 @@ We can recommend MQTT.fx!
 
 # Purchase Sensors
 
-You can buy sensors and development kits in our online shop at https://www.blusensor.com/shop/
+You can buy sensors and development kits on our website.
+https://www.blusensor.com/en/products/wifi-sensors-internet-of-things/
+
+Or you can also support us on Kickstarter!
+https://www.kickstarter.com/projects/blusensor/blusensor-aiq-the-flexible-air-quality-monitor/
 
 # Support
 
