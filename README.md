@@ -65,7 +65,9 @@ iot/blusensor/v1/gateway/001122334455/thing/00:11:22:33:44:55/data
 
 #### Sensor Types
 
-type         | description             
+#### Device Types
+
+device type  | description             
 ------------ | -------------           
 01           | Humidity & Temperature  
 02           | Accelerometer           
@@ -73,21 +75,20 @@ type         | description
 04           | Air Flow                
 05           | Ambient Light           
 06           | Accelerometer, Magnetometer, Gyroscope 
-07           | Accelerometer (Low Energy)  
-08           | Shake-It Sports Tracker 
-09           | Air Quality (Industrial)
+07           | (reserved)
+08           | (reserved)
+09           | (reserved)
 10           | Air Quality 
 11           | Usage Counter  
-12           | Temperature Probe (PTC) 
-13           | Temperature Probe (NTC) 
+12           | (reserved)
+13           | Temperature
 14           | Infrared Array Camera  
 15           | Particulate Matter 
-16           | Distance 
-17           | Ambient Light  
-18           | Highspeed Magnetometer  
-19           | People Presence Detector  
-20           | People Counter
-21           | Distance Counter
+16           | Proximity Distance 
+17           | Proximity Counter
+18           | People
+
+
 
 ### Sensor Specific Information
 
