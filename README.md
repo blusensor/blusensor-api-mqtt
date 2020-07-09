@@ -60,8 +60,8 @@ iot/blusensor/v1/things/B01080112233445566
 * **location**: user defined sensor location
 * **type**: sensor type 
 * **lat**, **lon**: GPS coordinates 
-* **ts_unix**: UNIX timestamp of measurement 
-* **ts_iso**: ISO8601 formatted timestamp of measurement 
+* **ts_unix**: UNIX timestamp of measurement (UTC)
+* **ts_iso**: ISO8601 formatted timestamp of measurement (UTC)
 
 
 #### Device Types
