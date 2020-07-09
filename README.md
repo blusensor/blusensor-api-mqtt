@@ -23,15 +23,15 @@ We've implemented a basic dashboard to display current sensor values: https://br
 ## MQTT Topics
 
 ```
-iot/blusensor/v1/gateway/<GWID>/thing/<MAC>/data
+iot/blusensor/v1/things/<SERIALNR>/telemetry
 ```
 
-* **GWID** = world-wide unique gateway ID 
-* **MAC** = world-wide uniquey sensor ID 
+* **SERIALNR** = world-wide unique sensor serialnumber (18 characters)
+
 
 Example:
 ```
-iot/blusensor/v1/gateway/001122334455/thing/00:11:22:33:44:55/data
+iot/blusensor/v1/things/B01080112233445566
 ```
 
 ## MQTT Sensor Data (json)
@@ -41,9 +41,9 @@ iot/blusensor/v1/gateway/001122334455/thing/00:11:22:33:44:55/data
 ```
 {
   
-  "mac" : "00:11:22:33:44:55",
-  "gwid" : "001122334455",
-  "name" : “bluSensor Lab, Infinite Loop, Cupertino, CA 95014", 
+  "serialnr" : "B01080112233445566",
+  "name" : “bluSensor, Infinite Loop, Cupertino, CA 95014", 
+  "location" : "bluSensor Lab Room 1"
   "type" : 1,
   "lat" : "37.7858340“
   "lon" : "-122.4064170",
@@ -55,15 +55,14 @@ iot/blusensor/v1/gateway/001122334455/thing/00:11:22:33:44:55/data
 }
 ```
 
-* **mac**: sensor ID (same as topic mac) 
-* **gwid**: gateway ID (same as topic gwid) 
+* **serialnr**: sensor serialnumber
 * **name**: user defined sensor name 
+* **location**: user defined sensor location
 * **type**: sensor type 
 * **lat**, **lon**: GPS coordinates 
 * **ts_unix**: UNIX timestamp of measurement 
 * **ts_iso**: ISO8601 formatted timestamp of measurement 
 
-#### Sensor Types
 
 #### Device Types
 
