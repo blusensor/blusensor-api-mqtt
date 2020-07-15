@@ -69,10 +69,10 @@ iot/blusensor/v1/things/B01080112233445566
 device type  | description             
 ------------ | -------------           
 01           | Humidity & Temperature  
-02           | Accelerometer           
+02           | (reserved)           
 03           | 3D Fusion (Euler)       
 04           | Air Flow                
-05           | Ambient Light           
+05           | (reserved)           
 06           | (reserved) 
 07           | Accelerometer, Magnetometer, Gyroscope 
 08           | (reserved)
@@ -84,8 +84,12 @@ device type  | description
 14           | Infrared Array Camera  
 15           | Particulate Matter 
 16           | Proximity Distance 
-17           | Proximity Counter
-18           | People
+17           | Light Ambient
+18           | Magnetometer
+19           | People Detection
+20           | (reserved)
+21           | Proximity Counter
+
 
 
 
