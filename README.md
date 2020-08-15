@@ -125,7 +125,7 @@ Magnetometer            | mag_x / mag_y / mag_z
 Usage Index             | uix
 Light                   | light
 Noise                   | noise
-AIQ Index               | aiq_index, aiq_info
+AIQ Index               | aiq
 Pressure                | pressure
 Infrared Array          | ir_cam
 Distance                | distance
