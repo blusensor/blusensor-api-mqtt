@@ -14,16 +14,29 @@ broker.blusensor.com
 * 8883 (client,TLS)
 * 8885 (websockets,TLS)
 
-## Dashboard
+## Sensor Setup
 
-We've implemented a basic dashboard to display current sensor values: https://broker.blusensor.com
+All our Wi-Fi sensors directly support MQTT. You can also use your own MQTT broker
 
-<img src="screenshot_dashboard.png" width="800">
+In order to connect a bluSensor device to your MQTT broker you need to configure the IoT connection on your sensors. In order to do so, you need to put the device into ADMIN MODE. The device will make a Wi-Fi hotspot (name=serialnumber) that you can connect to.
+
+Once connected you can open the URL: http://blusensor.local
+
+Select the menu item "Internet of Things" to configure your sensor. Next select "MQTT" as your provider and fill out the "Endpoint Configuration". 
+
+Once your configuration is finished, you need to restart the device. You can check our iOS/Android app for connection states. Detailed informations can be found on the sensor's information page.
+
+
+## Sensor Interval
+
+The sensor will send updates every 60 seconds.
 
 ## MQTT Topics
 
 ```
 iot/blusensor/v1/things/<SERIALNR>/telemetry
+iot/blusensor/v1/things/<SERIALNR>/device
+iot/blusensor/v1/things/<SERIALNR>/alarms
 ```
 
 * **SERIALNR** = world-wide unique sensor serialnumber (18 characters)
@@ -31,7 +44,9 @@ iot/blusensor/v1/things/<SERIALNR>/telemetry
 
 Example:
 ```
-iot/blusensor/v1/things/B01080112233445566
+iot/blusensor/v1/things/B01080112233445566/telemetry
+iot/blusensor/v1/things/B01080112233445566/device
+iot/blusensor/v1/things/B01080112233445566/alarms
 ```
 
 ## MQTT Sensor Data (json)
@@ -147,13 +162,6 @@ We can recommend MQTT.fx!
 #### MQTT.fx - Sensor Data (JSON)
 <img src="screenshot_mqttfx.jpg" width="800">
 
-# Purchase Sensors
-
-You can buy sensors and development kits on our website.
-https://www.blusensor.com/en/products/wifi-sensors-internet-of-things/
-
-Or you can also support us on Kickstarter!
-https://www.kickstarter.com/projects/blusensor/blusensor-aiq-the-flexible-air-quality-monitor/
 
 # Support
 
