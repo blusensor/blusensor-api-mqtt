@@ -12,6 +12,22 @@ Select the menu item "Internet of Things" to configure your sensor. Next select 
 
 Once your configuration is finished, you need to restart the device. You can check our iOS/Android app for connection states. Detailed informations can be found on the sensor's information page.
 
+## Trouble Shooting
+
+We just saw that the mDNS of our sensor is not working with all notebooks.
+
+If you encounter any issues please use the following workaround:
+
+1) http://192.168.4.1
+2) Login with „123456"
+3) You will be redirected to a „http://blusensor.local/sensor.html?token=234234234" that might not work (due to DNS)
+4) Please replace „blusensor.local“ with „192.168.4.1“
+
+For example:
+http://192.168.4.1/sensor.html?token=522310792
+
+Sorry for the inconvenience!
+
 ## Enter Admin Mode 
 
 The default password is "123456", but you can change that anytime.
