@@ -18,6 +18,10 @@ We just saw that the mDNS of our sensor is not working with all notebooks.
 
 If you encounter any issues please use the following workaround:
 
+1) add DNS entry "blusensor.local" -> 192.168.4.1 to your local DNS registry
+
+or, 
+
 1) http://192.168.4.1
 2) Login with „123456"
 3) You will be redirected to a „http://blusensor.local/sensor.html?token=234234234" that might not work (due to DNS)
