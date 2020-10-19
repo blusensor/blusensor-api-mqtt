@@ -1,22 +1,8 @@
 # bluSensor® MQTT API
 
-## Broker
-You can use our **shared MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, you can use our **app** (bluSensor® AIR) to configure your sensors to connect to it. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
-
-```
-broker.blusensor.com
-```
-
-**Available Ports**
-
-* 7883 (client)
-* 7885 (websockets)
-* 8883 (client,TLS)
-* 8885 (websockets,TLS)
+All our Wi-Fi sensors directly support MQTT. You can also use your own MQTT broker
 
 ## Sensor Setup
-
-All our Wi-Fi sensors directly support MQTT. You can also use your own MQTT broker
 
 In order to connect a bluSensor device to your MQTT broker you need to configure the IoT connection on your sensors. In order to do so, you need to put the device into ADMIN MODE. The device will make a Wi-Fi hotspot (name=serialnumber) that you can connect to.
 
@@ -26,6 +12,18 @@ Select the menu item "Internet of Things" to configure your sensor. Next select 
 
 Once your configuration is finished, you need to restart the device. You can check our iOS/Android app for connection states. Detailed informations can be found on the sensor's information page.
 
+## Enter Admin Mode 
+
+The default password is "123456", but you can change that anytime.
+
+<img src="blusensor_aiq_admin.png" width="800">
+
+## Configure Internet of Things 
+
+<img src="blusensor_aiq_admin_dashboard.png" width="800">
+
+## Configure Wi-Fi on your sensor
+You need to connect your sensor to a Wi-Fi network. This can be done on the first page of the admin dashboard or you can use our app for iOS and Android
 
 ## Sensor Interval
 
@@ -149,6 +147,20 @@ People Presence         | people
 People Counter          | people
 
 
+
+## Broker
+You can use our **shared MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, you can use our **app** (bluSensor® AIR) to configure your sensors to connect to it. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
+
+```
+broker.blusensor.com
+```
+
+**Available Ports**
+
+* 7883 (client)
+* 7885 (websockets)
+* 8883 (client,TLS)
+* 8885 (websockets,TLS)
 
 ## Development Tools
 
