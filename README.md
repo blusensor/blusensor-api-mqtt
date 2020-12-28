@@ -48,7 +48,7 @@ You need to connect your sensor to a Wi-Fi network. This can be done on the firs
 ## MQTT broker "mosquitto" default config
 If you are using mosquitto with its default configuration (non-TLS) you need to configure your sensor like this
 
-
+<img src="blusensor_aiq_admin_mosquitto.png" width="800">
 
 ## Sensor Interval
 
