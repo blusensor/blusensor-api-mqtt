@@ -45,6 +45,11 @@ The default password is "123456", but you can change that anytime.
 ## Configure Wi-Fi on your sensor
 You need to connect your sensor to a Wi-Fi network. This can be done on the first page of the admin dashboard or you can use our app for iOS and Android
 
+## MQTT broker "mosquitto" default config
+If you are using mosquitto with its default configuration (non-TLS) you need to configure your sensor like this
+
+
+
 ## Sensor Interval
 
 The sensor will send updates every 60 seconds.
