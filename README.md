@@ -2,6 +2,26 @@
 
 All our Wi-Fi sensors directly support MQTT. You can also use your own MQTT broker
 
+## Firmware
+
+Please update to the latest firmare V1.1.0. This release contains important bugfixes for local MQTT networks.
+For updating your sensors, please select "bluSensor IOT" as your IoT provider and use the iOS/Android app to trigger the firmware update.
+
+Alternatively, you can sent the following MQTT command to your device:
+
+TOPIC
+```
+iot/blusensor/v1/things/<serialnr>/control
+```
+MESSAGE
+```
+{"ota": "1.1.0"}
+```
+
+Once the sensor is starting the update, it will blink in blue.
+
+Please note, that the sensor needs public internet access to download the firmware update.
+
 ## Sensor Setup
 
 In order to connect a bluSensor device to your MQTT broker you need to configure the IoT connection on your sensors. In order to do so, you need to put the device into ADMIN MODE. The device will make a Wi-Fi hotspot (name=serialnumber) that you can connect to.
