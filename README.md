@@ -193,19 +193,30 @@ People Counter          | people
 
 
 
-## Broker
-You can use our **shared MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, you can use our **app** (bluSensor® AIR) to configure your sensors to connect to it. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
+## Public MQTT Broker
+You can use our **public MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, you can use our **app** (bluSensor® AIR) to configure your sensors to connect to it. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
 
 ```
-broker.blusensor.com
+test.blusensor.com
 ```
 
 **Available Ports**
 
-* 7883 (client)
-* 7885 (websockets)
-* 8883 (client,TLS)
-* 8885 (websockets,TLS)
+* 8883 (TLS)
+* 8081 (websockets,TLS)
+
+The shared MQTT broker only support TLS connections and user authentication is mandatory from now on.
+
+* user=blusensor
+* pass=123456
+
+You need to use the serialnumber of your sensor as the client ID
+
+* client_id=<serialnr>
+
+Any device connected to the broker can only subscribe and publish to its own topic
+
+* topics=iot/blusensor/v1/things/<client_id>/#
 
 ## Development Tools
 
