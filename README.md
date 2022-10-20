@@ -226,6 +226,8 @@ Any device connected to the broker can only subscribe and publish to its own top
 iot/blusensor/v1/things/<client_id>/#
 ```
 
+Our legacy public broker.blusensor.com will be running until 30.11.2022. 
+
 ## Development Tools
 
 You can use any MQTT client to connect to our broker and subscribe to your sensor's data. 
