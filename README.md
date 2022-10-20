@@ -202,21 +202,29 @@ test.blusensor.com
 
 **Available Ports**
 
-* 8883 (TLS)
-* 8081 (websockets,TLS)
+```
+8883 (TLS)
+8081 (websockets,TLS)
+```
 
 The shared MQTT broker only support TLS connections and user authentication is mandatory from now on.
 
-* user=blusensor
-* pass=123456
+```
+user=blusensor
+pass=123456
+```
 
 You need to use the serialnumber of your sensor as the client ID
 
-* client_id=<serialnr>
+```
+client_id=<serialnr>
+```
 
 Any device connected to the broker can only subscribe and publish to its own topic
 
-* topics=iot/blusensor/v1/things/<client_id>/#
+```
+iot/blusensor/v1/things/<client_id>/#
+```
 
 ## Development Tools
 
