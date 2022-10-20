@@ -213,13 +213,14 @@ Our legacy public broker.blusensor.com will be running until 30.11.2022.
 
 You can use any MQTT client to connect to our broker and subscribe to your sensor's data. 
 
-We can recommend MQTT.fx!
+We can recommend MQTT X!
+https://mqttx.app/
 
-#### MQTT.fx - Configuration (TLS)
-<img src="screenshot_mqttfx_conf.jpg" width="800">
+#### MQTT X - Configuration (TLS)
+<img src="screenshot_mqttx_config.jpg" width="800">
 
-#### MQTT.fx - Sensor Data (JSON)
-<img src="screenshot_mqttfx.jpg" width="800">
+#### MQTT X - Sensor Data (JSON)
+<img src="screenshot_mqttx_topics.jpg" width="800">
 
 
 # Support
