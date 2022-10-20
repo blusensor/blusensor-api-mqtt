@@ -216,10 +216,10 @@ You can use any MQTT client to connect to our broker and subscribe to your senso
 We can recommend MQTT X!
 https://mqttx.app/
 
-#### MQTT X - Configuration (TLS)
+#### MQTT X - Configuration (Broker)
 <img src="screenshot_mqttx_config.jpg" width="800">
 
-#### MQTT X - Sensor Data (JSON)
+#### MQTT X - Sensor Data (Topics)
 <img src="screenshot_mqttx_topics.jpg" width="800">
 
 
