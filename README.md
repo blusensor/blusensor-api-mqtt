@@ -26,31 +26,12 @@ Please note, that the sensor needs public internet access to download the firmwa
 
 In order to connect a bluSensor device to your MQTT broker you need to configure the IoT connection on your sensors. In order to do so, you need to put the device into ADMIN MODE. The device will make a Wi-Fi hotspot (name=serialnumber) that you can connect to.
 
-Once connected you can open the URL: http://blusensor.local
+Once connected you can open the URL: http://192.168.4.1
 
 Select the menu item "Internet of Things" to configure your sensor. Next select "MQTT" as your provider and fill out the "Endpoint Configuration". 
 
 Once your configuration is finished, you need to restart the device. You can check our iOS/Android app for connection states. Detailed informations can be found on the sensor's information page.
 
-## Trouble Shooting
-
-We just saw that the mDNS of our sensor is not working with all notebooks.
-
-If you encounter any issues please use the following workaround:
-
-1) add DNS entry "blusensor.local" -> 192.168.4.1 to your local DNS registry
-
-or, 
-
-1) http://192.168.4.1
-2) Login with „123456"
-3) You will be redirected to a „http://blusensor.local/sensor.html?token=234234234" that might not work (due to DNS)
-4) Please replace „blusensor.local“ with „192.168.4.1“
-
-For example:
-http://192.168.4.1/sensor.html?token=522310792
-
-Sorry for the inconvenience!
 
 ## Enter Admin Mode 
 
