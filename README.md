@@ -178,7 +178,7 @@ People Counter          | people
 You can use our **public MQTT broker** free of charge. If your project requires a **dedicated and private MQTT broker** or if you want to use your **own broker**, you can use our **app** (bluSensor® AIR) to configure your sensors to connect to it. Using **TLS** and **client certificates** (stored on the sensor) is also already supported! Please contact us for details!
 
 ```
-mqtt.blusensor.com
+test.blusensor.com
 ```
 
 **Available Ports**
