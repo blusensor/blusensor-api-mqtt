@@ -213,6 +213,8 @@ Our legacy public broker.blusensor.com will be running until 30.11.2022.
 
 You can use any MQTT client to connect to our broker and subscribe to your sensor's data. 
 
+Note: do not use the same client id as your sensor! The broker only supports one connection per client ID.
+
 We can recommend MQTT X!
 https://mqttx.app/
 
