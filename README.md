@@ -217,7 +217,7 @@ We can recommend MQTT X!
 https://mqttx.app/
 
 #### MQTT X - Configuration (Broker)
-<img src="screenshot_mqttx_config.jpg" width="800">
+<img src="screenshot_mqttx_config_new.jpg" width="800">
 
 #### MQTT X - Sensor Data (Topics)
 <img src="screenshot_mqttx_topics.jpg" width="800">
